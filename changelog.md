@@ -21,7 +21,7 @@
 * Transactionalised if operations to alter tables are called within a transaction
 * Do not pass results back from hooks (not needed by Sequelize)
 * Replaced usage of Promise.resolve().then() with Promise.try()
-* Changed uses of Utils._.str.capitalize() to Utils.uppercaseFirst() to reflect removal of underscore.string dependency from sequelize
+* Changed uses of `Utils._.str.capitalize()` to `Utils.uppercaseFirst()` to reflect removal of underscore.string dependency from sequelize
 * Adjusted capitalization to reflect that model names and tables names are no longer capitalized
 * Changed 'childs' to 'children' as pluralization now performed through Inflection library which pluralizes "child" correctly
 
@@ -158,3 +158,20 @@ Now supports all Sequelize dialects.
 * Allow primaryKey customization (thanks @devlato)
 * `make all` runs tests for Microsoft SQL Server
 * README typo
+
+## 0.2.11
+
+* Loosen sequelize dependency version to v2.x.x
+* Update mysql module dependency in line with sequelize v2.1.0
+* Update lodash dependency
+* Update dev dependencies
+* README contribution section
+
+## 0.2.12
+
+* Replace `utils.endsWith` with `_.endsWith`
+* Tidy up changelog
+
+## 0.2.13
+
+* Remove relative path to sequelize in tests
